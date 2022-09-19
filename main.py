@@ -7,7 +7,7 @@ class Question:
     Содержится информация о вопросе, сложности и ответе
     """
 
-    def __init__(self, question: str, difficulty: str, answer: str):
+    def __init__(self, question: str, difficulty: str, answer: str) -> None:
         self.question = question
         self.difficulty = difficulty
         self.answer = answer
@@ -25,7 +25,7 @@ class Question:
     """
         return self.answer == self.user_answer
 
-    def build_question(self):
+    def build_question(self) -> None:
         """
         Возвращает вопрос в понятном пользователю виде, например:
         Вопрос: What do people often call American flag?
@@ -57,7 +57,7 @@ def read_file() -> list:
     return question_list
 
 
-def main():
+def main() -> None:
     points = 0
     count = 0
     print('Игра начинается!')
